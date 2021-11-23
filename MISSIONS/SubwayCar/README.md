@@ -4,7 +4,7 @@ This repository includes useful functions and code snippets for the Subway Car m
 
 Our team ITUROV came first place in Turkey and we had the chance to compete in world finals. We came 3rd place in the world in technical documentation and 6th in general.
 
-## Thoughts about the Algorithm
+## Thoughts on Algorithm
 
 There are a number of approaches we tried during the competiton simple stages of the algoritm. Altough we tested some algoritms the general idea goes like this.
 
@@ -27,5 +27,10 @@ After this we use Kmeans algoritm to find the colors on each side of the surface
 
 
 ![Result using our GUI](https://github.com/iturov/rov2021_mate/blob/missions/MISSIONS/SubwayCar/images/gui.jpeg)
+
+
+For questions
+altunf19@itu.edu.tr
+eren0altun@gmail.com
 
 
