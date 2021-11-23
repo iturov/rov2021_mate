@@ -13,7 +13,7 @@ ROV moves to front the surfaces one by one taking photos of each one of them. Th
 ### Using Kmeans To Get Color Value.
 ![Using Kmeans](https://github.com/iturov/rov2021_mate/blob/missions/MISSIONS/SubwayCar/images/kmeansedited.png)
 
-After this we use Kmeans algoritm to find the colors on each side of the surfaces to match them. We use K=1 and then delete the white color, giving us the remaining color.
+Kmeans algorithm can be used to find the colors on each side of the surfaces. As seen in the figure the brown rectangles are given as borders for KMeans. We use K=2 to get the desierd color and white. Deleting white color, gives us the remaining desired color. This is done for each side that has color on it of 5 surfaces. 
 
 
 ### Using Pixel Location To Get Color Value.
@@ -21,6 +21,7 @@ After this we use Kmeans algoritm to find the colors on each side of the surface
 
 ![Using Pixel Locations](https://github.com/iturov/rov2021_mate/blob/missions/MISSIONS/SubwayCar/images/test_photos.png)
 
+These colors are saved with the surface frame in a special data structure that can be seen in code.
 
 ### Creating the Mosaic
  The last step is to concate the surfaces to have the mosaic. This can be accomplished by starting with the surface that has four colors and putting it in correct position. Then we can search for 3 of the colors on this surface and match them. This last step is to place the remaining rectangle on the side of the square. These can be easily done when we have colors. 
